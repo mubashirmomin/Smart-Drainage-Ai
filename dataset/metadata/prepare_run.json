@@ -1,0 +1,21 @@
+{
+  "created_utc": "2026-10-20T19:33:48+00:00",
+  "seed": 42,
+  "ratios": {
+    "train": 0.8,
+    "val": 0.1,
+    "test": 0.1
+  },
+  "grouping_key": "video_id (filename text before '-mp4-t-') + identical image content",
+  "raw_dataset": "D:\\Projects\\smart-drainage-ai\\dataset\\raw\\sewer_v6",
+  "raw_pairs_found": 6154,
+  "exact_duplicates_dropped": 9,
+  "same_image_different_labels": 18,
+  "image_weight": 0.1,
+  "groups": 2176,
+  "images_per_split": {
+    "train": 5009,
+    "val": 572,
+    "test": 564
+  }
+}

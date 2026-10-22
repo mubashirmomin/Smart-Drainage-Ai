@@ -1,0 +1,48 @@
+# Python virtual environments & bytecode
+.venv/
+venv/
+ENV/
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyd
+
+# Node.js dependencies & builds
+frontend/node_modules/
+frontend/dist/
+frontend/.vite/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Heavy datasets & large media files (>50MB / raw datasets)
+dataset/processed/
+dataset/raw/
+*.mp4
+*.avi
+*.mov
+*.mkv
+!dataset/sample_videos/cctv_inspection_sample.mp4
+!backend/storage/inspections/INSP-MUM-DEMO-001/annotated_video.mp4
+
+# Uploaded test videos from users
+backend/uploads/*
+!backend/uploads/.gitkeep
+
+# Temporary inspection outputs
+backend/storage/inspections/INSP-*
+!backend/storage/inspections/INSP-MUM-DEMO-001/
+
+# YOLO & MLOps training artifacts
+runs/
+*.pt
+!mlops/experiments/yolo11s_15cls_test/weights/best.pt
+
+# OS / Editor files
+.DS_Store
+Thumbs.db
+*.swp
+.vscode/*
+!.vscode/settings.json
+!.vscode/launch.json
+.idea/

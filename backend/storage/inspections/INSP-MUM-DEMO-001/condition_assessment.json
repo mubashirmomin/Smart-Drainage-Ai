@@ -1,0 +1,50 @@
+{
+  "asset_inspection_meta": {
+    "video_file": "cctv_inspection_sample.mp4",
+    "video_duration_seconds": 3.6,
+    "total_frames_analyzed": 18,
+    "inspection_optical_status": "POOR_QUALITY_FLAGGED",
+    "degraded_footage_pct": 16.7
+  },
+  "pipe_health_indices": {
+    "pci_overall_score": 93.6,
+    "condition_state": "EXCELLENT",
+    "condition_description": "Pristine pipe segment; no structural or hydraulic distress.",
+    "structural_index_sci": 89.3,
+    "operational_index_oci": 100.0
+  },
+  "hydraulic_conveyance_assessment": {
+    "blockage_percentage": 0.0,
+    "blockage_severity_tier": "NORMAL / UNRESTRICTED",
+    "estimated_flow_loss_pct": 0.0,
+    "monsoon_overflow_risk": "MINIMAL",
+    "flow_impeding_defects_count": 0,
+    "primary_blockage_cause": "NONE",
+    "immediate_cleaning_required": false,
+    "recommended_hydraulic_action": "Pipe is hydraulically clear. Standard routine monitoring."
+  },
+  "maintenance_dispatch_prioritization": {
+    "work_order_priority": "P4_ROUTINE_MONITORING",
+    "sla_target_timeframe": "Annual Review Cycle (12 Months)",
+    "dispatch_rationale": "Minor superficial defects; pipe is structurally sound and operating at full conveyance capacity.",
+    "max_defect_grade_observed": 2,
+    "critical_defects_count": 0
+  },
+  "detailed_defect_inventory": [
+    {
+      "defect_id": 1,
+      "class_name": "SL_Infiltration",
+      "failure_mode": "STRUCTURAL",
+      "description": "Active groundwater intrusion through joints/cracks (bedding washout risk)",
+      "severity_score": 34.8,
+      "severity_grade": 2,
+      "grade_description": "MILD (Low Risk / Periodic Monitoring)",
+      "max_area_percentage": 9.29,
+      "persistence_seconds": 3.4,
+      "detection_confidence": 0.76,
+      "recommended_repair_action": "Hydrophobic polyurethane chemical grout injection and structural sealing",
+      "target_resolution_days": 60,
+      "thumbnail_path": "D:\\Projects\\smart-drainage-ai\\mlops\\experiments\\tracking_output\\thumbnails\\defect_001_SL_Infiltration.jpg"
+    }
+  ]
+}

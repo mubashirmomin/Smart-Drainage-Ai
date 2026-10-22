@@ -1,0 +1,74 @@
+{
+  "video_metadata": {
+    "filename": "cctv_inspection_sample.mp4",
+    "resolution": "1920x1080",
+    "total_frames": 18,
+    "fps": 5.0,
+    "duration_seconds": 3.6,
+    "processing_time_sec": 4.13,
+    "throughput_fps": 4.4
+  },
+  "quality_assessment": {
+    "total_frames": 18,
+    "degraded_frames_count": 3,
+    "degraded_percentage": 16.7,
+    "overall_status": "POOR_QUALITY_FLAGGED",
+    "quality_flags_log": [
+      {
+        "frame": 16,
+        "timestamp_sec": 3.2,
+        "issues": [
+          "BLURRY_LENS_FOG (var=28.0 < 60.0)",
+          "UNDEREXPOSED_DARK (lum=21.9 < 30.0)",
+          "LOW_CONTRAST (std=6.7 < 20.0)"
+        ],
+        "quality_score": 0.17
+      },
+      {
+        "frame": 17,
+        "timestamp_sec": 3.4,
+        "issues": [
+          "BLURRY_LENS_FOG (var=2.4 < 60.0)"
+        ],
+        "quality_score": 0.4
+      },
+      {
+        "frame": 18,
+        "timestamp_sec": 3.6,
+        "issues": [
+          "BLURRY_LENS_FOG (var=2.4 < 60.0)"
+        ],
+        "quality_score": 0.4
+      }
+    ]
+  },
+  "deduplication_summary": {
+    "total_unique_physical_defects": 1,
+    "defect_counts_by_class": {
+      "SL_Infiltration": 1
+    }
+  },
+  "unique_defects": [
+    {
+      "defect_id": 1,
+      "class_name": "SL_Infiltration",
+      "class_id": 11,
+      "hits": 25,
+      "first_frame": 1,
+      "last_frame": 18,
+      "first_time_sec": 0.2,
+      "last_time_sec": 3.6,
+      "duration_sec": 3.4,
+      "peak_confidence": 0.76,
+      "max_area_ratio": 0.0929,
+      "best_frame_idx": 9,
+      "best_bbox": [
+        839.3,
+        527.4,
+        991.2,
+        1079.7
+      ],
+      "thumbnail_path": "D:\\Projects\\smart-drainage-ai\\mlops\\experiments\\tracking_output\\thumbnails\\defect_001_SL_Infiltration.jpg"
+    }
+  ]
+}
